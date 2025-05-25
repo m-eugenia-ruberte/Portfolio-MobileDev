@@ -1,10 +1,18 @@
 # 01 Kotlin Basics
 
-En esta carpeta voy a ir subiendo ejercicios y notas de mi aprendizaje sobre Kotlin básico para Android.
+Este directorio contiene mis ejercicios de práctica en Kotlin mientras repaso los fundamentos del lenguaje.
 
-Objetivos:
-- Aprender sintaxis de Kotlin
-- Manejo de variables, tipos y control de flujo
-- Funciones y clases básicas
+Estoy usando [Kotlin Playground](https://play.kotlinlang.org/) mientras configuro mi entorno de desarrollo principal.
 
-¡Empezamos!
+Cada carpeta contiene una serie de ejercicios agrupados por tema.
+
+## Temas
+
+1. Variables y tipos
+2. Funciones
+3. Condicionales
+4. Bucles
+5. Colecciones
+6. Clases y objetos
+7. Nullable y null safety
+8. Extensiones y funciones lambda
