@@ -37,8 +37,13 @@ fun main() {
 
     // Ejercicio 5: Constantes y mutabilidad
     val pais = "España"
-    var ciudad = "Barcelona"
-    ciudad = "Madrid"
-    pais = "Francia"
+    var ciudad = "Barcelona"   
+	ciudad = "Madrid" // Esto funciona porque 'ciudad' es mutable (var)
+
+    // pais = "Francia" // ERROR: No se puede reasignar porque 'pais' es inmutable (val)
+    println("Ejercicio 5:")
+    println("Pais: $pais")
+    println("Ciudad después de cambiar: $ciudad")
+    println("\nNota: La línea que intenta reasignar 'pais' está comentada porque daría error.")
    
 }
