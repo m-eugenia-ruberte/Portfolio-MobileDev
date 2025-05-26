@@ -1,55 +1,37 @@
-03 - Condicionales
+# 03 - Estructuras de Control
+
 Ejercicios para practicar:
 
-Uso de if, else y else if
+- Sentencias if-else y when
+- Bucles for y while
+- Uso de break y continue
+- Control de flujo básico
 
-Expresiones lógicas (&&, ||, !)
+## Ejercicios
 
-Estructuras when
+1. **Mayor de dos números**
+   - Escribe una función que reciba dos números enteros y devuelva el mayor.
 
-Comparaciones múltiples y condiciones anidadas
+2. **Día de la semana**
+   - Crea una función que reciba un número del 1 al 7 y devuelva el nombre del día correspondiente usando `when`.
 
-Ejercicios
-Edad y acceso
+3. **Suma de números pares**
+   - Declara una función que recorra los números del 1 al 20 y sume solo los pares. Devuelve el resultado.
 
-Crea una función que reciba una edad como parámetro y devuelva un mensaje:
+4. **Cuenta regresiva**
+   - Escribe una función que imprima una cuenta regresiva desde un número dado hasta 0 usando `while`.
 
-Menores de 18: "Acceso denegado"
+5. **Salto en bucle**
+   - Crea un bucle que imprima los números del 1 al 10, pero que se salte el número 5 usando `continue`.
 
-18 o más: "Bienvenido"
+---
 
-Clasificación de nota
+## Código fuente completo
 
-Escribe una función que reciba una nota del 0 al 10 y devuelva una calificación como texto:
+Puedes ver todo el código fuente con las soluciones en este archivo:  
+[📄 respuestas.kt](./respuestas.kt)
 
-0-4: "Insuficiente"
-
-5: "Suficiente"
-
-6: "Bien"
-
-7-8: "Notable"
-
-9-10: "Sobresaliente"
-
-Utiliza when.
-
-Número positivo y par
-
-Declara una función que reciba un número entero y devuelva true si es positivo y par, y false en caso contrario.
-
-Mayor de tres números
-
-Escribe una función que reciba tres números enteros y devuelva el mayor de ellos.
-
-Calculadora simple
-
-Crea una función que reciba dos números y un operador (+, -, *, /) y devuelva el resultado de aplicar dicha operación.
-
-Utiliza when.
-
-Código fuente completo
-Puedes ver todo el código fuente con las soluciones en este archivo:
-📄 respuestas.kt
+---
 
 ¡Gracias por pasar por aquí!
+
