@@ -1,26 +1,26 @@
 03 - Condicionales
-Este módulo forma parte del itinerario Kotlin Básicos del repositorio Portfolio-MobileDev.
-En él se practican estructuras de control condicional como if, else, operadores lógicos y la expresión when.
+Ejercicios para practicar:
 
-🧠 Objetivos didácticos
-Utilizar sentencias if, else y else if
+Uso de if, else y else if
 
-Aplicar condiciones lógicas (&&, ||, !)
+Expresiones lógicas (&&, ||, !)
 
-Usar when como alternativa a múltiples if
+Estructuras when
 
-Comprender estructuras condicionales anidadas
+Comparaciones múltiples y condiciones anidadas
 
-📄 Enunciados de ejercicios
+Ejercicios
 Edad y acceso
-Escribe una función que reciba una edad y devuelva un mensaje:
+
+Crea una función que reciba una edad como parámetro y devuelva un mensaje:
 
 Menores de 18: "Acceso denegado"
 
 18 o más: "Bienvenido"
 
 Clasificación de nota
-Crea una función que reciba una nota del 0 al 10 y devuelva:
+
+Escribe una función que reciba una nota del 0 al 10 y devuelva una calificación como texto:
 
 0-4: "Insuficiente"
 
@@ -31,23 +31,25 @@ Crea una función que reciba una nota del 0 al 10 y devuelva:
 7-8: "Notable"
 
 9-10: "Sobresaliente"
-Usa when.
 
-Es par y positivo
-Escribe una función que reciba un número y devuelva true si es positivo y par, false en caso contrario.
+Utiliza when.
 
-Mayor de tres
-Crea una función que reciba tres números y devuelva el mayor de ellos.
+Número positivo y par
+
+Declara una función que reciba un número entero y devuelva true si es positivo y par, y false en caso contrario.
+
+Mayor de tres números
+
+Escribe una función que reciba tres números enteros y devuelva el mayor de ellos.
 
 Calculadora simple
-Crea una función que reciba dos números y una operación (+, -, *, /) y devuelva el resultado correspondiente.
-Usa when.
 
-## Código fuente completo
+Crea una función que reciba dos números y un operador (+, -, *, /) y devuelva el resultado de aplicar dicha operación.
 
-Puedes ver todo el código fuente con las soluciones en este archivo:  
-[📄 respuestas.kt](./respuestas.kt)
+Utiliza when.
 
----
+Código fuente completo
+Puedes ver todo el código fuente con las soluciones en este archivo:
+📄 respuestas.kt
 
-¡Gracias por pasar por aquí!  
+¡Gracias por pasar por aquí!
