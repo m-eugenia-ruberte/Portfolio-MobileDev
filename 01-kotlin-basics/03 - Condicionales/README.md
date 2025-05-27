@@ -2,10 +2,9 @@
 
 Ejercicios para practicar:
 
-- Sentencias if-else y when
-- Bucles for y while
-- Uso de break y continue
-- Control de flujo básico
+-Uso de condicionales if y when
+-Bucles for y while
+-Control de flujo con continue
 
 ## Ejercicios
 
@@ -22,7 +21,7 @@ Ejercicios para practicar:
    - Escribe una función que imprima una cuenta regresiva desde un número dado hasta 0 usando `while`.
 
 5. **Salto en bucle**
-   - Crea un bucle que imprima los números del 1 al 10, pero que se salte el número 5 usando `continue`.
+   - Declara una función que imprima los números del 1 al 10, excepto uno que se pasa como argumento. Usa 'continue' para saltarlo.
 
 ---
 
