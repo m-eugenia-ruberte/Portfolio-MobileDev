@@ -2,9 +2,9 @@
 
 Ejercicios para practicar:
 
--Uso de condicionales if y when
--Bucles for y while
--Control de flujo con continue
+- Uso de condicionales if y when
+- Bucles for y while
+- Control de flujo con continue
 
 ## Ejercicios
 
