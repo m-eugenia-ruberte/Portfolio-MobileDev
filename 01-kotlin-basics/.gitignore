@@ -1,0 +1,29 @@
+# Kotlin/Java build files
+*.class
+*.jar
+*.war
+*.ear
+
+# Gradle files
+.gradle/
+build/
+
+# Local configuration files (IDE)
+local.properties
+.idea/
+*.iml
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Kotlin specific
+out/
+
+# Ignore shelf and workspace files (ya tenías)
+shelf/
+workspace.xml
+
