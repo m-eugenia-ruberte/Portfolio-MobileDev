@@ -10,7 +10,7 @@ build/
 
 # Local configuration files (IDE)
 local.properties
-.idea/
+01-kotlin-basics/.idea/
 *.iml
 
 # Logs
