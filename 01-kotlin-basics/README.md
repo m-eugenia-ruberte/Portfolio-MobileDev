@@ -8,11 +8,18 @@ Cada carpeta contiene una serie de ejercicios agrupados por tema.
 
 ## Temas
 
-1. Variables y tipos
-2. Funciones
-3. Condicionales
-4. Bucles
-5. Colecciones
-6. Clases y objetos
-7. Nullable y null safety
-8. Extensiones y funciones lambda
+01. Variables y tipos
+02. Funciones
+03. Condicionales
+04. Bucles
+05. Colecciones
+06. Clases y objetos
+07. Nullable y null safety
+08. Extensiones y funciones lambda
+09. Funciones lambda y colecciones funcionales
+10. Data classes y destructuring
+11. Herencia y polimorfismo
+12. Manejo de errores (try/catch)
+13. Extensiones y expresiones infix
+14. Introducción a Coroutines (muy básico)
+15. Unidad de repaso final con proyecto pequeño
