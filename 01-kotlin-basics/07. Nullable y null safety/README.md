@@ -1,4 +1,4 @@
-# 06 - Null Safety
+# 07 - Nullable y Null Safety
 
 ## Temas prácticos
 
