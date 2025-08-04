@@ -6,9 +6,22 @@
 - Propiedades y métodos
 - Visibilidad (`private`, `public`)
 - Constructores primarios y secundarios
-- Bloques init
+- Bloques `init`
 - Objetos (`object`)
 - Uso de `this`
+
+## Resumen de teoría
+
+- **Clases:** Plantillas para crear objetos. Se definen con la palabra clave `class`.
+- **Propiedades:** Variables que describen el estado del objeto, definidas dentro de la clase.
+- **Métodos:** Funciones dentro de una clase que definen comportamientos.
+- **Visibilidad:** Por defecto, las propiedades y métodos son `public`. Con `private` se restringe el acceso solo a la clase.
+- **Constructores primarios:** Definidos en la cabecera de la clase para inicializar propiedades.
+- **Constructores secundarios:** Métodos alternativos para crear objetos, usan la palabra clave `constructor`.
+- **Bloques `init`:** Código que se ejecuta justo después del constructor primario, ideal para inicializaciones adicionales.
+- **Objetos (`object`):** Instancia única y singleton que puede contener propiedades y métodos.
+- **Uso de `this`:** Referencia explícita al objeto actual, útil para distinguir propiedades de parámetros con el mismo nombre.
+
 
 ## Ejercicios
 
@@ -36,7 +49,7 @@
 8. **Clase Alumno con uso de `this`**  
    Crear una clase `Alumno` con una propiedad `nota`. Incluir un método `evaluar(nota: Int)` que actualice la propiedad usando `this.nota = nota` y determine si está aprobado (nota ≥ 6). Mostrar el resultado.
 
-## 📁 Archivo de soluciones
+## Archivo de respuestas
 
-[respuestas.kt](respuestas.kt)
-
+Puedes ver todo el código fuente con las soluciones en este archivo:  
+[📄 respuestas.kt](./respuestas.kt)
