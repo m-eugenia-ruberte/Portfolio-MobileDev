@@ -68,12 +68,12 @@ Ejemplo:
    Usa un bucle `while` para calcular la suma total de los números del 1 al 100.
 
 3. Bucle con condición de salida  
-   Usa un bucle `do-while` para pedir al usuario que escriba palabras hasta que introduzca "salir".
+   Usa un bucle `do-while` para simular 3 intentos de conexión. Imprime un mensaje como "Intento 1: conectando..." en cada iteración.
 
-4. Números pares del 1 al 20  
+5. Números pares del 1 al 20  
    Imprime solo los números pares entre 1 y 20 usando `continue`.
 
-5. Tabla de multiplicar del 5  
+6. Tabla de multiplicar del 5  
    Usa un bucle `for` para mostrar la tabla de multiplicar del 5, del 5x1 al 5x10.
 
 ## Archivo de respuestas
