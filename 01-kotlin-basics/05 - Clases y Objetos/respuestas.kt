@@ -178,34 +178,3 @@ class Alumno(){
         
     }
 }
-Respuestas a los ejercicios de Clases y Objetos
-==============================================
-
-Ejercicio 1:
-Hola me llamo Pepe y tengo 12 años.
-
-Ejercicio 2:
-El área de un rectángulo que tiene de base 5 y altura 3 es 15
-
-Ejercicio 3:
-El coche de modelo Seat Ibiza ha arrancado
-
-Ejercicio 4:
-Después de depositar un monto de 50.0 tiene un saldo de 50.0
-El saldo disponible es de 50.0
-Después de retirar un monto de 10.0 tiene un saldo de 40.0
-El saldo disponible es de 40.0
-
-Ejercicio 5:
-El producto se llama Libro y tiene un precio de 30.0
-El producto se llama Tetera y tiene un precio de 25.0
-
-Ejercicio 6:
-Libro "La isla del tesoro" creado.
-
-Ejercicio 7:
-Modo oscuro: true
-Idioma: español
-
-Ejercicio 8:
-Suspenso
