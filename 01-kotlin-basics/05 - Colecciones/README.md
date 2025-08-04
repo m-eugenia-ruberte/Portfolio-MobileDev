@@ -1,4 +1,4 @@
-# 05: Colecciones
+# 05 - Colecciones
 
 ## Temas prácticos
 
