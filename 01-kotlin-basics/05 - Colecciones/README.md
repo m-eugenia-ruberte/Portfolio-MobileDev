@@ -2,22 +2,23 @@
 
 ## Temas prácticos
 
-- Declaración y uso de listas (`listOf`, `mutableListOf`)
-- Declaración y uso de conjuntos (`setOf`, `mutableSetOf`)
-- Diferencias entre List y Set
+- Declaración y uso de listas
 - Recorrer colecciones con bucles
-- Operaciones básicas con colecciones: tamaño, acceso, modificación
-- Filtrado y búsqueda de elementos
-- Funciones auxiliares: `contains`, `sum`, `map`, `filter`, etc.
+- Operaciones básicas con colecciones
+- Filtrado de elementos
+- Funciones con colecciones como parámetro
+- Búsqueda de elementos
 
-## Comparativa: List vs Set
+## Resumen de teoría
 
-| Tipo de colección    | ¿Permite duplicados? | ¿Es mutable? | Ejemplo de creación |
-|----------------------|----------------------|--------------|----------------------|
-| `listOf()`           | ✅ Sí                | ❌ No        | `val lista = listOf(1, 2, 3)` |
-| `mutableListOf()`    | ✅ Sí                | ✅ Sí        | `val lista = mutableListOf(1, 2, 3)` |
-| `setOf()`            | ❌ No                | ❌ No        | `val conjunto = setOf(1, 2, 3)` |
-| `mutableSetOf()`     | ❌ No                | ✅ Sí        | `val conjunto = mutableSetOf(1, 2, 3)` |
+- Una **colección** es una estructura de datos que agrupa elementos (números, cadenas, objetos, etc.).
+- En Kotlin, se usan principalmente:
+  - `listOf(...)` para listas **inmutables**
+  - `mutableListOf(...)` para listas **mutables**
+  - `setOf(...)` y `mutableSetOf(...)` para conjuntos **sin duplicados**
+- Puedes recorrer una colección con un bucle `for`.
+- Las listas tienen métodos útiles como `.size`, `.first()`, `.last()`, `.contains()`, entre otros.
+- Puedes filtrar elementos usando `.filter { ... }` y transformar usando `.map { ... }`.
 
 > 🔎 **Nota:** Al intentar agregar un elemento duplicado a un `Set`, no se lanza error: simplemente se ignora de forma silenciosa.
 
