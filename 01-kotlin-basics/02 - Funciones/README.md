@@ -1,11 +1,24 @@
 # 02 - Funciones
 
-Ejercicios para practicar:
+## Temas prácticos
 
 - Declaración y uso de funciones
-- Argumentos y valores de retorno
+- Parámetros y argumentos
+- Valores de retorno
 - Funciones con tipos explícitos
+- Funciones con valores por defecto
 - Buenas prácticas en nombres y estructura
+
+## Resumen de teoría
+
+- Las funciones se definen con la palabra clave `fun`.
+- Se pueden declarar parámetros con nombre y tipo:  
+  `fun saludar(nombre: String): String { ... }`
+- El tipo de retorno se especifica después de los paréntesis.
+- Las funciones pueden devolver valores con `return`.
+- Se pueden asignar valores por defecto a los parámetros para hacerlos opcionales.
+- Es recomendable usar nombres descriptivos y evitar funciones muy largas
+
 
 ## Ejercicios
 
@@ -29,7 +42,7 @@ Ejercicios para practicar:
 
 ---
 
-## Código fuente completo
+## Archivo de respuestas
 
 Puedes ver todo el código fuente con las soluciones en este archivo:  
 [📄 respuestas.kt](./respuestas.kt)
