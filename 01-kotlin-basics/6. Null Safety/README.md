@@ -1,4 +1,4 @@
-# Módulo 06 - Null Safety
+# 06 - Null Safety
 
 ## Temas prácticos
 
