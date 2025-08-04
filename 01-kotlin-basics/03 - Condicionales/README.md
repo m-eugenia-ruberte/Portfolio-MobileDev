@@ -1,10 +1,21 @@
 # 03 - Estructuras de Control
 
-Ejercicios para practicar:
+## Temas prácticos
 
-- Uso de condicionales if y when
-- Bucles for y while
-- Control de flujo con continue
+- Uso de condicionales `if` y `when`
+- Bucles `for` y `while`
+- Control de flujo con `continue`
+
+## Resumen de teoría
+
+- `if` es una estructura condicional que puede devolver un valor.  
+  Ejemplo:  
+  `val mayor = if (a > b) a else b`
+- `when` es similar a un switch y permite evaluar múltiples condiciones.  
+- Los bucles `for` permiten iterar sobre rangos o colecciones.  
+- `while` repite un bloque mientras la condición sea verdadera.  
+- `continue` salta a la siguiente iteración del bucle.
+
 
 ## Ejercicios
 
@@ -25,7 +36,7 @@ Ejercicios para practicar:
 
 ---
 
-## Código fuente completo
+## Archivo de respuestas
 
 Puedes ver todo el código fuente con las soluciones en este archivo:  
 [📄 respuestas.kt](./respuestas.kt)
