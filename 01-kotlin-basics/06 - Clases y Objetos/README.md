@@ -1,4 +1,4 @@
-# 05: Clases y Objetos
+# 06: Clases y Objetos
 
 ## Temas prácticos
 
