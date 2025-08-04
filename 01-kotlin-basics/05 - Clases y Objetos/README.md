@@ -1,4 +1,4 @@
-# Módulo 05: Clases y Objetos
+# 05: Clases y Objetos
 
 ## Temas prácticos
 
