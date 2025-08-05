@@ -1,95 +1,86 @@
-# 08 - Herencia y Polimorfismo en Kotlin
+# 08 - Extensiones y funciones lambda
 
 ## Temas prácticos
 
-- Herencia de clases con `open` y `:`
-- Sobrescritura de métodos con `override`
-- Uso de `super`
-- Clases abstractas y métodos abstractos
-- Polimorfismo en tiempo de ejecución
+- Funciones de extensión (`fun Tipo.funcion()`)
+- Propiedades de extensión
+- Lambdas como parámetros de función
+- Sintaxis de lambdas
+- Tipos `Function` y funciones de orden superior
 
 ## Teoría resumida
 
-### 🔹 Herencia básica
+### Extensiones
 
-En Kotlin, las clases no son heredables por defecto. Para permitir la herencia, se deben marcar como `open`.
+Las funciones de extensión permiten **agregar funcionalidades a clases existentes** sin necesidad de heredar o modificar su código.
 
 ```kotlin
-open class Animal {
-    open fun hacerSonido() {
-        println("Algún sonido")
-    }
+fun String.saludar(): String {
+    return "Hola, $this"
 }
 
-class Perro : Animal() {
-    override fun hacerSonido() {
-        println("Guau")
-    }
-}
+val mensaje = "Kotlin".saludar()  // Hola, Kotlin
 ```
 
-### 🔹 Uso de `super`
-
-Se utiliza `super` para acceder a métodos o propiedades de la clase padre desde una clase hija.
+También se pueden definir propiedades de extensión (solo de lectura):
 
 ```kotlin
-class Gato : Animal() {
-    override fun hacerSonido() {
-        super.hacerSonido()
-        println("Miau")
-    }
-}
+val String.primeraLetra: Char
+    get() = this.first()
 ```
 
-### 🔹 Clases abstractas
+### Lambdas y funciones de orden superior
 
-Una clase abstracta no puede ser instanciada y puede contener métodos abstractos (sin implementación).
+Una **lambda** es una función anónima que puede almacenarse en variables o pasarse como parámetro.
 
 ```kotlin
-abstract class Figura {
-    abstract fun area(): Double
-}
+val saludar = { nombre: String -> "Hola, $nombre" }
+println(saludar("Ana"))  // Hola, Ana
 ```
 
-Las clases hijas deben implementar los métodos abstractos:
+Una **función de orden superior** es una función que recibe otras funciones como argumento o devuelve una función.
 
 ```kotlin
-class Circulo(val radio: Double) : Figura() {
-    override fun area(): Double = Math.PI * radio * radio
+fun operar(a: Int, b: Int, operacion: (Int, Int) -> Int): Int {
+    return operacion(a, b)
 }
+
+val suma = operar(3, 4) { x, y -> x + y }  // 7
 ```
 
-### 🔹 Polimorfismo
-
-Permite tratar objetos de diferentes clases que comparten un mismo tipo base de forma uniforme.
+Las lambdas pueden usar `it` si tienen un solo parámetro:
 
 ```kotlin
-fun imprimirSonido(animal: Animal) {
-    animal.hacerSonido()
-}
+val duplicar = { it: Int -> it * 2 }  // o simplemente { it * 2 }
 ```
 
 ## Ejercicios
 
-1. **Clase base Animal**  
-   Define una clase `Animal` con un método `hacerSonido()` que imprima "Sonido genérico". Crea una clase hija `Perro` que sobrescriba este método para imprimir "Guau".
+1. **Función de extensión `esPar()`**  
+   Crea una función de extensión para `Int` llamada `esPar()` que devuelva `true` si el número es par.
 
-2. **Uso de super en Gato**  
-   Crea una clase `Gato` que herede de `Animal`, sobrescriba `hacerSonido()` e imprima primero el mensaje del padre y luego "Miau".
+2. **Extensión para String: `palabras()`**  
+   Define una función de extensión que divida un `String` en una lista de palabras.
 
-3. **Clase abstracta Figura**  
-   Declara una clase abstracta `Figura` con un método abstracto `area()`. Luego crea una clase `Rectangulo` que herede de ella e implemente el método.
+3. **Propiedad de extensión `primeraLetra`**  
+   Declara una propiedad de extensión para `String` que devuelva la primera letra.
 
-4. **Polimorfismo en acción**  
-   Crea una función `imprimirArea(figura: Figura)` que imprima el área. Usa esta función con distintas figuras para mostrar el comportamiento polimórfico.
+4. **Función de orden superior `operar()`**  
+   Implementa una función que reciba dos enteros y una lambda para operar con ellos. Prueba con suma, resta y multiplicación.
 
-5. **Sobrescritura en cadena**  
-   Crea una clase `Vehiculo` con un método `conducir()`, y una clase `Coche` que lo sobrescriba. Luego una clase `Deportivo` que herede de `Coche` y también sobrescriba `conducir()`.
+5. **Lambda personalizada `saludar`**  
+   Define una lambda que reciba un nombre y devuelva un saludo.
 
-6. **Uso de clases abstractas con animales**  
-   Declara una clase abstracta `AnimalSalvaje` con un método abstracto `alimentarse()`. Luego crea dos clases que hereden de ella (`Leon` y `Jirafa`) e implementen el método de forma distinta.
+6. **Filtrar lista con lambda**  
+   Dada una lista de enteros del 1 al 10, usa `filter` con una lambda para obtener solo los números pares.
+
+7. **Contar caracteres usando `count {}`**  
+   Cuenta cuántas letras mayúsculas hay en un texto usando una lambda con `count`.
+
+8. **Ejecutar una lambda dentro de una función**  
+   Escribe una función `ejecutarOperacion` que reciba una lambda sin parámetros ni retorno y la ejecute.
 
 ## Archivo de respuestas
 
 Puedes ver todo el código fuente con las soluciones en este archivo:  
-[📄 respuestas.kt](./respuestas.kt)
+[respuestas.kt](./respuestas.kt)
