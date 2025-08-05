@@ -1,26 +1,53 @@
 fun main() {
-    println("Ejercicio 1 - Contador del 1 al 10")
-    // TODO: Completa aquí el bucle for para imprimir del 1 al 10
+    println("Respuestas a los ejercicios de Bucles")
+    println("=========================================\n")
 
-    println("\nEjercicio 2 - Suma de números del 1 al 100")
-    // TODO: Completa aquí el bucle while para sumar del 1 al 100
+    // Ejercicio 1: Contador del 1 al 10
+    println("Ejercicio 1:")
+    for(i in 1..10){
+        println(i)
+    }
+    println()
 
-    println("\nEjercicio 3 - Bucle con condición de salida")
-    // TODO: Completa aquí el bucle do-while para pedir palabras hasta "salir"
+    // Ejercicio 2: Suma de números del 1 al 100
+    println("Ejercicio 2:")
+    var x = 0
+    while(x <=100){
+        x = x + x
+        x++
+    }
+    println(x)
+    println()
 
-    println("\nEjercicio 4 - Números pares del 1 al 20")
-    // TODO: Completa aquí para imprimir números pares usando continue
+    // Ejercicio 3: Bucle con condición de salida
+    println("Ejercicio 3:")
+    var i = 0
+    do{
+        i++
+        println("Intento $i: conectando...")
+        
+       
+    }while (i<3)
+    println()
 
-    println("\nEjercicio 5 - Tabla de multiplicar del 5")
-    // TODO: Completa aquí el bucle for para mostrar la tabla del 5
+    // Ejercicio 4: Números pares del 1 al 20
+    println("Ejercicio 4:")
+    var num = 0
+    while(num <= 20){
+        num++
+        if(num%2 != 0){
+           continue         
+        }
+        println(num)
+    }
+    println()
+
+    // Ejercicio 5: Tabla de multiplicar del 5
+    println("Ejercicio 5:")
+        
+    for(i in 1..10){
+        println(5*i)
+    }
+    println()
 }
 
-// Ejercicio 1
-
-// Ejercicio 2
-
-// Ejercicio 3
-
-// Ejercicio 4
-
-// Ejercicio 5
