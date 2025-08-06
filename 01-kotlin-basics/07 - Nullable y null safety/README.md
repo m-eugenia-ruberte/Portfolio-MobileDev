@@ -1,4 +1,4 @@
-# 07 - Nullable y Null Safety
+# 07 - Nullable y null safety
 
 ## Temas prácticos
 
