@@ -1,4 +1,4 @@
-# 04 - Bucles en Kotlin
+# 04 - Bucles
 
 ## Temas prácticos
 
