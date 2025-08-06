@@ -10,7 +10,7 @@ Cada carpeta contiene una serie de ejercicios agrupados por tema.
 
 01. Variables y tipos
 02. Funciones
-03. Condicionales
+03. Estructuras de control
 04. Bucles
 05. Colecciones
 06. Clases y objetos
