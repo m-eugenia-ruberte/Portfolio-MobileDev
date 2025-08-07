@@ -1,5 +1,5 @@
 fun main() {
-    println("Respuestas a los ejercicios de Funciones lambda y colecciones funcionales")
+    println("Respuestas a los ejercicios de Extensiones y funciones lambda")
     println("=======================================================================\n")
 
     println("Ejercicio 1: Es par")
