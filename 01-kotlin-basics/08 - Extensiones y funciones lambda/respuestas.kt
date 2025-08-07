@@ -1,18 +1,21 @@
 fun main() {
-    println("Ejercicio 1 - esPar")
+    println("Respuestas a los ejercicios de Funciones lambda y colecciones funcionales")
+    println("=======================================================================\n")
+
+    println("Ejercicio 1: Es par")
     var numero = 2
     println(numero.esPar())
     numero = 3
     println(numero.esPar())
 
-    println("\nEjercicio 2 - palabras")
+    println("\Ejercicio 2: Contar palabras")
     var texto = "Esto es un texto de prueba"
     println(texto.palabras())
 
-    println("\nEjercicio 3 - primeraLetra")
+    println("\Ejercicio 3: Mostrar la primera letra ")
     println(texto.primeraLetra())
 
-    println("\nEjercicio 4 - operar")
+    println("\nEjercicio 4: Operar")
     
     println(operar(3,4, ::suma))
     val resta = {a:Int, b:Int-> a-b}
@@ -20,7 +23,7 @@ fun main() {
     
     println(operar(3,4, {a:Int, b:Int-> a*b}))
 
-    println("\nEjercicio 5 - saludar")
+    println("\nEjercicio 5: Saludar")
     val saludar = {it:String -> "Hola $it"}
 	println(saludar("María"))
 
@@ -33,14 +36,14 @@ fun main() {
     println(otros.filter{ it%2 == 0})
     
 
-    println("\nEjercicio 7 - count con lambda")
+    println("\nEjercicio 7: Count con lambda")
     val escrito = "Este texto Tiene Varias Mayúsculas"
     var mayusculas = escrito.count{
         it.isUpperCase()
     }
     println(mayusculas)
 
-    println("\nEjercicio 8 - ejecutarOperacion")
+    println("\nEjercicio 8: Ejecutar operacion")
     ejecutarOperacion() {
         println("Operación ejecutada")
     }   
