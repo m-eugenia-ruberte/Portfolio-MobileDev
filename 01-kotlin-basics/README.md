@@ -22,4 +22,3 @@ Cada carpeta contiene una serie de ejercicios agrupados por tema.
 12. Manejo de errores (try/catch)
 13. Extensiones y expresiones infix
 14. Introducción a Coroutines (muy básico)
-15. Unidad de repaso final con proyecto pequeño
