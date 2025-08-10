@@ -90,10 +90,6 @@ class Pajaro : Volador
  Crea clase `Pato` que implemente `Nadador` y otra clase `Persona` que no la implemente.  
  Demuestra la llamada a `nadar()`.
 
-5. **Uso combinado**  
- Crea una jerarquía de vehículos con clases base abstractas e interfaces (por ejemplo, `Vehiculo`, `Volador`, `Terrestre`).  
- Implementa clases concretas y usa polimorfismo para llamar métodos comunes.
-
 ---
 
 💡 **Consejo:**  
