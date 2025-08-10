@@ -19,6 +19,5 @@ Cada carpeta contiene una serie de ejercicios agrupados por tema.
 09. Funciones lambda y colecciones funcionales
 10. Data classes y destructuring
 11. Herencia y polimorfismo
-12. Manejo de errores (try/catch)
-13. Extensiones y expresiones infix
-14. Introducción a Coroutines (muy básico)
+12. Extensiones y expresiones infix
+13. Introducción a Coroutines (muy básico)
