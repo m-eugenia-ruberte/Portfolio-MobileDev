@@ -110,7 +110,8 @@ fun WoofApp() {
 }
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun WoffTopAppBar(modifier: Modifier = Modifier){
+fun
+        WoffTopAppBar(modifier: Modifier = Modifier){
     CenterAlignedTopAppBar(
         title = {
             Row(
