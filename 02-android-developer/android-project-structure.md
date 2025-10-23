@@ -1,7 +1,7 @@
 
 # Estructura general del proyecto
 
-
+```
 com.example.tuapp/
 │
 ├── data/                ← Capa de datos (fuentes externas)
@@ -26,3 +26,4 @@ com.example.tuapp/
 │   └── viewmodel/       ← Lógica de UI + comunicación con domain
 │
 └── di/                  ← Inyección de dependencias (Hilt o Koin)
+```
