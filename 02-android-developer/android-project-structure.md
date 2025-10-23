@@ -1,5 +1,5 @@
 
-# Estructura general del proyecto
+# Estructura general de un proyecto
 
 ```
 com.example.tuapp/
