@@ -2,16 +2,17 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.kotlin.kapt)
 }
 
 android {
-    namespace = "com.meugeniaruberte.urticdiary"
+    namespace = "com.meruberte.urticdiary"
     compileSdk {
         version = release(36)
     }
 
     defaultConfig {
-        applicationId = "com.meugeniaruberte.urticdiary"
+        applicationId = "com.meruberte.urticdiary"
         minSdk = 26
         targetSdk = 36
         versionCode = 1

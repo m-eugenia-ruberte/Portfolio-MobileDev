@@ -1,4 +1,4 @@
-package com.meugeniaruberte.urticdiary
+package com.meruberte.urticdiary
 
 import org.junit.Test
 

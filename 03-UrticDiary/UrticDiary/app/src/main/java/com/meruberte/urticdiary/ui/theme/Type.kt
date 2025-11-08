@@ -1,4 +1,4 @@
-package com.meugeniaruberte.urticdiary.ui.theme
+package com.meruberte.urticdiary.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

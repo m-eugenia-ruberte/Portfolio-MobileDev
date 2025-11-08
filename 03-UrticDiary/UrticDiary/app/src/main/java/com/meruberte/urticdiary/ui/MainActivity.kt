@@ -1,4 +1,4 @@
-package com.meugeniaruberte.urticdiary
+package com.meruberte.urticdiary.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -7,23 +7,20 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.meugeniaruberte.urticdiary.ui.theme.UrticDiaryTheme
+import com.meruberte.urticdiary.ui.theme.UrticDiaryTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContent {
             UrticDiaryTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                Surface {
+                    WelcomeScreen()
                 }
             }
         }
@@ -31,17 +28,12 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
+fun WelcomeScreen() {
+    Text("🌿 UrticDiary — estructura base lista")
 }
 
-@Preview(showBackground = true)
+@Preview
 @Composable
-fun GreetingPreview() {
-    UrticDiaryTheme {
-        Greeting("Android")
-    }
+fun PreviewWelcome() {
+    UrticDiaryTheme { WelcomeScreen() }
 }
