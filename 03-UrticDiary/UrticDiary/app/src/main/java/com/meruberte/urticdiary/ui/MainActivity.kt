@@ -12,8 +12,14 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.lifecycle.lifecycleScope
+import androidx.room.Room
+import com.meruberte.urticdiary.data.local.UrticDiaryDatabase
+import com.meruberte.urticdiary.data.repository.DailyEntryRepository
+import com.meruberte.urticdiary.domain.model.DailyEntry
 import com.meruberte.urticdiary.ui.screens.entry.EntryScreen
 import com.meruberte.urticdiary.ui.theme.UrticDiaryTheme
+import kotlinx.coroutines.launch
 
 
 class MainActivity : ComponentActivity() {
