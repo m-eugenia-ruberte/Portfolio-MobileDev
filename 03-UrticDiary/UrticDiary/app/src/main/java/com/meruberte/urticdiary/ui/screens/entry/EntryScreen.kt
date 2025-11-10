@@ -2,11 +2,13 @@ package com.meruberte.urticdiary.ui.screens.entry
 
 import androidx.compose.runtime.Composable
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.meruberte.urticdiary.data.repository.DailyEntryRepository
 
 @Composable
-fun EntryScreen(
-    viewModel: EntryViewModel = viewModel()
-) {
+fun EntryScreen(repository: DailyEntryRepository) {
+    val viewModel: EntryViewModel = viewModel(
+        factory = EntryViewModelFactory(repository)
+    )
     EntryForm(
         hivesLevel = viewModel.hivesLevel.value,
         itchLevel = viewModel.itchLevel.value,
