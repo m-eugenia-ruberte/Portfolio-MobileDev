@@ -8,11 +8,14 @@ fun EntryScreen(
     viewModel: EntryViewModel = viewModel()
 ) {
     EntryForm(
-        onSave = {hives, itch, notes ->
-            viewModel.hivesLevel = hives
-            viewModel.itchLevel = itch
-            viewModel.notes = notes
-            viewModel.saveEntry()
-        }
+        hivesLevel = viewModel.hivesLevel.value,
+        itchLevel = viewModel.itchLevel.value,
+        notes = viewModel.notes.value,
+        onHivesLevelChange = {viewModel.hivesLevel.value = it},
+        onItchLevelChange = {viewModel.itchLevel.value = it},
+        onNotesChange = {viewModel.notes.value = it},
+        onSave = {viewModel.saveEntry()},
+        saved = viewModel.saved.value,
+        onReset = {viewModel.resetForm()}
     )
 }
