@@ -35,6 +35,18 @@ fun EntryForm(
             "Registrar síntomas del día",
             style = MaterialTheme.typography.titleLarge
         )
+        SymptomLevelSelector(
+            label = "Nivel de ronchas",
+            levels = listOf("Ninguna", "<20", "21-50", ">50"),
+            selectedIndex = hivesLevel,
+            onLevelSelected = { hivesLevel = it}
+        )
+        SymptomLevelSelector(
+            label = "Nivel de picor",
+            levels = listOf("Ninguno", "Leve", "Moderado", "Intenso"),
+            selectedIndex = itchLevel,
+            onLevelSelected = { itchLevel = it}
+        ) 
         OutlinedTextField(
             value = notes,
             onValueChange = {notes = it},
