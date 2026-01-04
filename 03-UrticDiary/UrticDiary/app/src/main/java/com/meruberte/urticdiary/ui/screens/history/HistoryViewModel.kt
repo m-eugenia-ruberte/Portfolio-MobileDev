@@ -5,9 +5,7 @@ import androidx.lifecycle.viewModelScope
 import com.meruberte.urticdiary.data.repository.DailyEntryRepository
 import com.meruberte.urticdiary.domain.model.DailyEntry
 import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 
 class HistoryViewModel(private val repository: DailyEntryRepository) : ViewModel() {
