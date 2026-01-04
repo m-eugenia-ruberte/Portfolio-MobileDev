@@ -3,17 +3,23 @@ package com.meruberte.urticdiary.ui.screens.history
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.meruberte.urticdiary.data.repository.DailyEntryRepository
+import com.meruberte.urticdiary.domain.model.DailyEntry
+import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
+import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.launch
 
-class HistoryViewModel(
-    repository: DailyEntryRepository
-): ViewModel() {
+class HistoryViewModel(private val repository: DailyEntryRepository) : ViewModel() {
 
-    val entries = repository.getAllEntries()
-        .stateIn(
-            scope = viewModelScope,
-            started = SharingStarted.WhileSubscribed(5000),
-            initialValue = emptyList()
-        )
+    private val _entries = MutableStateFlow<List<DailyEntry>>(emptyList())
+    val entries: StateFlow<List<DailyEntry>> = _entries
+
+    init {
+        viewModelScope.launch {
+            repository.getAllEntries().collect { list ->
+                _entries.value = list
+            }
+        }
+    }
 }
