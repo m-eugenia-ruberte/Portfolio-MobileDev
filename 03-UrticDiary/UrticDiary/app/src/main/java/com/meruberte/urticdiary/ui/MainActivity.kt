@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import com.meruberte.urticdiary.data.local.UrticDiaryDatabase
 import com.meruberte.urticdiary.data.repository.DailyEntryRepository
+import com.meruberte.urticdiary.ui.navigation.UrticDiaryNavHost
 import com.meruberte.urticdiary.ui.screens.history.HistoryScreen
 import com.meruberte.urticdiary.ui.theme.UrticDiaryTheme
 
@@ -20,7 +21,7 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             UrticDiaryTheme {
-                HistoryScreen(repository = repository)
+                UrticDiaryNavHost(repository = repository)
             }
         }
     }

@@ -1,11 +1,16 @@
 package com.meruberte.urticdiary.ui.screens.entry
 
+import androidx.compose.material3.Button
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.meruberte.urticdiary.data.repository.DailyEntryRepository
 
 @Composable
-fun EntryScreen(repository: DailyEntryRepository) {
+fun EntryScreen(
+    repository: DailyEntryRepository,
+    onNavigateToHistory: () -> Unit = {}
+) {
     val viewModel: EntryViewModel = viewModel(
         factory = EntryViewModelFactory(repository)
     )
@@ -18,6 +23,8 @@ fun EntryScreen(repository: DailyEntryRepository) {
         onNotesChange = {viewModel.notes.value = it},
         onSave = {viewModel.saveEntry()},
         saved = viewModel.saved.value,
-        onReset = {viewModel.resetForm()}
+        onReset = {viewModel.resetForm()},
+        onNavigateToHistory= onNavigateToHistory
     )
+
 }

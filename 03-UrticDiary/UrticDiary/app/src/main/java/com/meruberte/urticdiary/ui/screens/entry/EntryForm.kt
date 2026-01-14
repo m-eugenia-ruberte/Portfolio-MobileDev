@@ -28,7 +28,8 @@ fun EntryForm(
     onNotesChange: (String) -> Unit,
     onSave: ()-> Unit,
     saved: Boolean,
-    onReset: () -> Unit
+    onReset: () -> Unit,
+    onNavigateToHistory: () -> Unit = {}
 ){
     var showConfirmation by remember { mutableStateOf(false) }
 
@@ -79,6 +80,9 @@ fun EntryForm(
             modifier = Modifier.fillMaxWidth()
         ){
             Text("Guardar")
+        }
+        Button(onClick = { onNavigateToHistory() }) {
+            Text("Ver historial")
         }
     }
 }
