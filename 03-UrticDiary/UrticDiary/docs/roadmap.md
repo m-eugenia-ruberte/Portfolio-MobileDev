@@ -52,9 +52,8 @@ Repositorio funcional con documentación completa y commit inicial limpio.
 - Notificación diaria funcional que abre la app.
 
 **Documentos asociados:**
-- `docs/mvp_spec.md` — especificación funcional de la Fase 1.
-- `CHANGELOG.md` — registro de avances.
-
+- [mvp_spec.md](mvp_spec.md) — especificación funcional de la Fase 1.
+- [CHANGELOG.md](CHANGELOG.md) — registro de avances.
 ---
 
 ## 🔔 Fase 2 — Recordatorios configurables
