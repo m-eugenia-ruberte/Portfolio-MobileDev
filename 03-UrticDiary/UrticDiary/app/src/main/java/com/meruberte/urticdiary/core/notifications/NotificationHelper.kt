@@ -10,15 +10,15 @@ import androidx.annotation.RequiresPermission
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import com.meruberte.urticdiary.R
-import com.meruberte.urticdiary.core.Constants
+import com.meruberte.urticdiary.core.ReminderConstants
 import com.meruberte.urticdiary.ui.MainActivity
 
 object NotificationHelper {
 
     fun createNotificationChannel(context: Context) {
         val channel = NotificationChannel(
-            Constants.CHANNEL_ID,
-            Constants.CHANNEL_NAME,
+            ReminderConstants.CHANNEL_ID,
+            ReminderConstants.CHANNEL_NAME,
             NotificationManager.IMPORTANCE_DEFAULT
         ).apply {
             description = "Recordatorio diario para registrar síntomas"
@@ -40,7 +40,7 @@ object NotificationHelper {
             PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
         )
 
-        val notification = NotificationCompat.Builder(context, Constants.CHANNEL_ID)
+        val notification = NotificationCompat.Builder(context, ReminderConstants.CHANNEL_ID)
             .setSmallIcon(R.drawable.ic_notification) // luego lo creamos
             .setContentTitle("Registro diario")
             .setContentText("¿Cómo ha sido tu día con la urticaria?")
@@ -49,6 +49,6 @@ object NotificationHelper {
             .build()
 
         NotificationManagerCompat.from(context)
-            .notify(Constants.NOTIFICATION_ID, notification)
+            .notify(ReminderConstants.NOTIFICATION_ID, notification)
     }
 }

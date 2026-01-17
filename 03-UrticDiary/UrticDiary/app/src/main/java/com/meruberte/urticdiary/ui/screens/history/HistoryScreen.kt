@@ -17,6 +17,7 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.meruberte.urticdiary.data.repository.DailyEntryRepository
 
@@ -25,7 +26,7 @@ import com.meruberte.urticdiary.data.repository.DailyEntryRepository
 fun HistoryScreen(
     repository: DailyEntryRepository,
     onNavigateToEntry: () -> Unit = {},
-    viewModel: HistoryViewModel = viewModel(factory = HistoryViewModelFactory(repository))
+    viewModel: HistoryViewModel = hiltViewModel()
 ){
     val entries by viewModel.entries.collectAsState()
 

@@ -5,10 +5,13 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.meruberte.urticdiary.data.repository.DailyEntryRepository
 import com.meruberte.urticdiary.domain.model.DailyEntry
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import java.time.LocalDate
+import javax.inject.Inject
 
-class EntryViewModel(
+@HiltViewModel
+class EntryViewModel @Inject constructor(
     private val repository: DailyEntryRepository
 ): ViewModel(){
 

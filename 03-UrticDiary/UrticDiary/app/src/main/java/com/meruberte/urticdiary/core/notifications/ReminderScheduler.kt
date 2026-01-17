@@ -1,6 +1,6 @@
 import android.content.Context
 import androidx.work.*
-import com.meruberte.urticdiary.core.Constants
+import com.meruberte.urticdiary.core.ReminderConstants
 import com.meruberte.urticdiary.core.notifications.DailyReminderWorker
 import com.meruberte.urticdiary.core.notifications.NotificationHelper
 import com.meruberte.urticdiary.core.notifications.NotificationPermissionHelper
@@ -34,7 +34,7 @@ object ReminderScheduler {
                 .build()
 
         WorkManager.getInstance(context).enqueueUniquePeriodicWork(
-            Constants.WORK_NAME,
+            ReminderConstants.WORK_NAME,
             ExistingPeriodicWorkPolicy.KEEP,
             workRequest
         )

@@ -11,9 +11,11 @@ import com.meruberte.urticdiary.data.local.UrticDiaryDatabase
 import com.meruberte.urticdiary.data.repository.DailyEntryRepository
 import com.meruberte.urticdiary.ui.navigation.UrticDiaryNavHost
 import com.meruberte.urticdiary.ui.screens.history.HistoryScreen
+import com.meruberte.urticdiary.ui.screens.settings.SettingsScreen
 import com.meruberte.urticdiary.ui.theme.UrticDiaryTheme
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

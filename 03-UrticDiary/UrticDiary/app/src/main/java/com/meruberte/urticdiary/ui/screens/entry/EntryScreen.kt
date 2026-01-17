@@ -3,6 +3,7 @@ package com.meruberte.urticdiary.ui.screens.entry
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.meruberte.urticdiary.data.repository.DailyEntryRepository
 
@@ -11,9 +12,8 @@ fun EntryScreen(
     repository: DailyEntryRepository,
     onNavigateToHistory: () -> Unit = {}
 ) {
-    val viewModel: EntryViewModel = viewModel(
-        factory = EntryViewModelFactory(repository)
-    )
+    val viewModel: EntryViewModel = hiltViewModel()
+
     EntryForm(
         hivesLevel = viewModel.hivesLevel.value,
         itchLevel = viewModel.itchLevel.value,

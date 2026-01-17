@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.meruberte.urticdiary.core.AppConstants
 import com.meruberte.urticdiary.domain.model.DailyEntry
 @Database(entities = [DailyEntry::class], version = 1, exportSchema = false)
 abstract class UrticDiaryDatabase : RoomDatabase() {
@@ -19,7 +20,7 @@ abstract class UrticDiaryDatabase : RoomDatabase() {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
                     UrticDiaryDatabase::class.java,
-                    "urtic_diary_db"
+                    AppConstants.DATABASE_NAME
                 ).build()
                 INSTANCE = instance
                 instance
