@@ -37,7 +37,8 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             UrticDiaryTheme {
-                UrticDiaryNavHost(repository = repository)
+                //UrticDiaryNavHost(repository = repository)
+                SettingsScreen()
             }
         }
     }
